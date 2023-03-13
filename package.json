@@ -1,0 +1,17 @@
+{
+  "name": "agendamento",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "This project is a appointment management system using Node.js, Full-Calendar and MongoDB",
+  "main": "index.js",
+  "license": "MIT",
+  "start": "nodemon index.js",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.0.3",
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "mongoose": "^7.0.1",
+    "nodemon": "^2.0.21"
+  }
+}

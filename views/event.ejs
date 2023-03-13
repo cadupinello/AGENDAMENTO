@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="stylesheet" href="./event.css">
+  <title>Agendamento - Full Calendar</title>
+</head>
+<body>
+  <style>
+    body {
+      max-width: 100%;
+      background-color: #262626;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      color: #f2f2f2;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    #container {
+      max-width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 100vh;
+    }
+
+    #box {
+      width: 100%;
+      max-width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      box-shadow: 0px 0px 10px rgba(88, 88, 88, 0.5);
+      margin: 1rem;
+      padding: 1rem;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin: 0.5rem;
+    }
+
+    .btn {
+      width: 100%;
+      padding: 1.1rem;
+      margin-top: 0.5rem;
+      margin-bottom: 0.8rem;
+      border-radius: 2px;
+      cursor: pointer;
+      background-color: #cecece;
+      color: #262626;
+      font-weight: bold;
+    }
+
+    .btn-outline-danger {
+      border: 1px solid #b32020;
+      background-color: #f2f2f2;
+      color: #b32020;
+    }
+
+    .btn-outline-danger:hover {
+      background-color: #b32020;
+      color: #f2f2f2;
+      transition: 0.5s;
+    }
+
+  </style>
+  <div id="container">
+   <div id="box">
+    <h1>AGENDAMENTO</h1>
+     <p><strong>Consulta</strong>: <%= appo.description %>  </p>
+     <p><strong>Paciente</strong>: <%= appo.name %> </p>
+     <p><strong>CPF</strong>: <%= appo.cpf %> </p>
+     <p><strong>Email</strong>: <%= appo.email %> </p>
+     <%if(!appo.finished) { %>
+       <button class="btn btn-outline-danger">Finalizar consulta</button>
+     <% } %>
+       
+  </div>
+  </div>
+</body>
+<script src="jquery.mask.min.js"></script>
+
+</html>

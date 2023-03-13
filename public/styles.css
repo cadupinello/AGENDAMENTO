@@ -1,0 +1,87 @@
+body {
+  max-width: 100%;
+  background-color: #262626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #f2f2f2;
+  font-family: 'Roboto', sans-serif;
+}
+
+#container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#box {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 10px rgba(88, 88, 88, 0.5);
+  margin: 1rem;
+  padding: 1rem;
+}
+
+#form {
+  margin: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.inputField {
+  width: 45%;
+  padding: 1.1rem;
+  margin-bottom: 0.8rem;
+  border: 1px solid #383838;
+  border-radius: 2px;
+  background-color: #262626;
+  color: #f2f2f2;
+}
+
+.inputField:focus {
+  outline: none;
+  border: 1px solid #1464db;
+  transition: 0.5s;
+}
+
+::-webkit-calendar-picker-indicator {
+  background-color: #f2f2f2;
+  padding: 0.5rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn {
+  width: 100%;
+  padding: 1.1rem;
+  margin-bottom: 0.8rem;
+  border-radius: 2px;
+  cursor: pointer;
+  background-color: #cecece;
+  color: #262626;
+  font-weight: bold;
+}
+
+.btn-outline-blue {
+  border: 1px solid #1464db;
+  background-color: #f2f2f2;
+  color: #1464db;
+}
+
+.btn-outline-blue:hover {
+  background-color: #1464db;
+  color: #f2f2f2;
+  transition: 0.5s;
+}
