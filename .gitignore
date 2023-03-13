@@ -1,0 +1,15 @@
+.env
+node_modules
+.cache
+.idea
+.vscode
+.vscode/extensions
+.vscode/launch.json
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/templates
+.vscode/test
+.vscode/test/coverage
+.vscode/test/coverage/lcov.info
+.vscode/test/coverage/lcov.info.cleaned
+
